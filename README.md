@@ -17,3 +17,6 @@ rabbitmq 是一个消息中间件，用于接收和转发消息
   * 创建管理用户。输入：rabbitmqctl.bat add_user gujie gujie1991
   * 为用户赋值管理员权限。输入：rabbitmqctl.bat set_user_tags gujie administrator
   * 查看用户。输入：rabbitmqctl.bat list_users
+  
+# centos 7 环境安装
+ 1. 下载
