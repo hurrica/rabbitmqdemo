@@ -13,9 +13,9 @@ rabbitmq 是一个消息中间件，用于接收和转发消息
  到C:\Users\18064下面，覆盖掉C:\Users\18064下面的文件
  3. 下载并安装rabbitmq
  4. rabbitmq配置：
-  * 激活Rabbit MQ's Management Plugin 使用Rabbit MQ 管理插件，可以更好的可视化方式查看Rabbit MQ 服务器实例的状态，你可以在命令行中使用下面的命令激活活。 输入：rabbitmq-plugins.bat  enable  rabbitmq_management
-  * 创建管理用户。输入：rabbitmqctl.bat add_user gujie gujie1991
-  * 为用户赋值管理员权限。输入：rabbitmqctl.bat set_user_tags gujie administrator
+  * 激活Rabbit MQ's Management Plugin 使用Rabbit MQ 管理插件，可以更好的可视化方式查看Rabbit MQ 服务器实例的状态，你可以在命令行中使用下面的命令激活活。 输入：rabbitmq-plugins.bat  enable  rabbitmq_management  
+  * 创建管理用户。输入：rabbitmqctl.bat add_user gujie gujie1991  
+  * 为用户赋值管理员权限。输入：rabbitmqctl.bat set_user_tags gujie administrator  
   * 查看用户。输入：rabbitmqctl.bat list_users
   
 ## centos 7 环境安装
