@@ -23,6 +23,7 @@ public class SystemMessageListener {
     public void process(String message) {//监听消息
         logger.info("接收到消息：{}", message);
         processMessage(message, queueName);
+        throw new RuntimeException();
     }
 
     public void processMessage(String content, String queueName) {

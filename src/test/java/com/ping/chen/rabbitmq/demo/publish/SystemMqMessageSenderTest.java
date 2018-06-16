@@ -20,7 +20,11 @@ public class SystemMqMessageSenderTest {
 
     @Test
     public void sendMessage() throws Exception {
-        systemMqMessageSender.sendMessage("hello world");
+        int i=0;
+        while (i < 5){
+            i++;
+            systemMqMessageSender.sendMessage("hello world");
+        }
     }
 
 
