@@ -1,4 +1,4 @@
-package com.ping.chen.rabbitmq.demo;
+package com.ping.chen.rabbitmq.springamqpdemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

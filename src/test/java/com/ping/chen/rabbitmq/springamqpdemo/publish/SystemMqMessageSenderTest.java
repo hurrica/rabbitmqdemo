@@ -1,6 +1,6 @@
-package com.ping.chen.rabbitmq.demo.publish;
+package com.ping.chen.rabbitmq.springamqpdemo.publish;
 
-import com.ping.chen.rabbitmq.demo.Application;
+import com.ping.chen.rabbitmq.springamqpdemo.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

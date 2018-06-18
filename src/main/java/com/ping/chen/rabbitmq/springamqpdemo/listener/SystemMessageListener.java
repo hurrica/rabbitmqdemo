@@ -1,4 +1,4 @@
-package com.ping.chen.rabbitmq.demo.listener;
+package com.ping.chen.rabbitmq.springamqpdemo.listener;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

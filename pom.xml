@@ -59,7 +59,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.ping.chen.rabbitmq.demo.Application</mainClass>
+                            <mainClass>com.ping.chen.rabbitmq.springamqpdemo.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
