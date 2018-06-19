@@ -1,4 +1,4 @@
-package com.ping.chen.rabbitmq.demo.publish;
+package com.ping.chen.rabbitmq.springamqpdemo.publish;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

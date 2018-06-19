@@ -1,4 +1,4 @@
-package com.ping.chen.rabbitmq.demo.controller;
+package com.ping.chen.rabbitmq.springamqpdemo.controller;
 
 /**
  * Created by ping.chen on 2018/5/6.

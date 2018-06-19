@@ -45,3 +45,34 @@ rabbitmq 是一个消息中间件，用于接收和转发消息
     列出角色：rabbitmqctl list_users
     
  ## rabbitmq特性
+
+    首先梳理一下rabbitmq工作模式：
+	publisher->exchange->queue->consumer
+	即：生产者将消息发送到交换机，交换机将消息路由到和该交换机绑定的队列，然后消费者监听队列
+	
+	四种交换机类型：
+	topic
+	header
+	fanout：将消息发送到所有绑定到当前交换机的队列，如pub/sub模式的实现，可用来实现日志收集系统
+	direct：比fanout更加严格的绑定模式，消息通过队列（Queue）和路由键（routingKey）绑定到交换机（exchange），所有符合路由键routingKey的消息都会被分发到对应的Queue上面去，
+		使用场景：日志系统中，用该模式来实现对不同级别日志的分类处理
+	
+#### round-robin
+	该模式下，所有的消费者都会接收到相同数量的消息
+	
+#### ack机制确保消息不会丢失
+
+	即使声明了队列持久化，也不能保证数据完全不会丢失，rabbitmq不会将接收到的数据立即刷新到磁盘，默认25ms刷盘一次、
+	
+	消息delivery确认：客户端向rabbitmq服务注册消费者时会生成一个单调递增的正整数tag，发送给服务端，服务端传递消息给消费者时，会在服务端和消费者之间开启一个Channel，并将该tag传递给Channel，消费者处理完消息发送消息确认给服务端时，必须带上该tag，如果消费者将消息发送到其他服务，则会抛出unknown delivery tag异常
+	
+	消息传输确认有积极和消极两种机制：积极确认：确保消息被正确的消费掉，服务器才会删除该消息；消极确认，消息一旦发出，就删除消息，不关系后溪消息是否被正确接收
+	
+	rabbitmq工作队列：
+	1、简单工作队列：点对点，一个生产者对应一个消费者
+	2、work Queue：一对多，该工作队列有多种分发模式
+		1）Round-robin dispatching 默认情况下，rabbitmq使用round-robin分发模式，将消息队列中的消息平等分发到各个消费队列中去，例如：有两个工作队列A和B的话，奇数的消息会被分发到A，偶数的会被分发到B
+		2）Fair dispatch
+		Round-robin分发模式有一个缺点，可能导致一个队列很忙，但是另一个队列却很闲，原因是工作队列只是简单的将消息发送给消费者，并没有关心ack，我们可以通过设置参数basicQos来实现Fair dispatch，basicQos有一个参数prefetchCount，用来控制每个消费队列允许最大的没有ack的消息数量，
+	3、pub/sub模式：
+	将交换机声明为fanout类型，将所有发送到交换机的消息分发到绑定在该交换机的所有队列中去

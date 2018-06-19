@@ -1,6 +1,6 @@
-package com.ping.chen.rabbitmq.demo.publish;
+package com.ping.chen.rabbitmq.springamqpdemo.publish;
 
-import com.ping.chen.rabbitmq.demo.Application;
+import com.ping.chen.rabbitmq.springamqpdemo.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,11 @@ public class SystemMqMessageSenderTest {
 
     @Test
     public void sendMessage() throws Exception {
-        systemMqMessageSender.sendMessage("hello world");
+        int i=0;
+        while (i < 5){
+            i++;
+            systemMqMessageSender.sendMessage("hello world");
+        }
     }
 
 
