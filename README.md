@@ -51,9 +51,13 @@ publisher->exchange->queue->consumer
 即：生产者将消息发送到交换机，交换机将消息路由到和该交换机绑定的队列，然后消费者监听队列
 
 四种交换机类型：
+
 topic
+
 header
+
 fanout：将消息发送到所有绑定到当前交换机的队列，如pub/sub模式的实现，可用来实现日志收集系统
+
 direct：比fanout更加严格的绑定模式，消息通过队列（Queue）和路由键（routingKey）绑定到交换机（exchange），所有符合路由键routingKey的消息都会被分发到对应的Queue上面去，使用场景：日志系统中，用该模式来实现对不同级别日志的分类处理
 
 #### round-robin
