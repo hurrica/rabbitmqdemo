@@ -52,7 +52,7 @@ publisher->exchange->queue->consumer
 
 四种交换机类型：
 
-topic
+topic：使用通配符#*，#匹配一个单词，*匹配任意单词
 
 header
 
