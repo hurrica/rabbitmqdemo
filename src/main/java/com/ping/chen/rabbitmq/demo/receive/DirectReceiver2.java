@@ -29,7 +29,6 @@ public class DirectReceiver2 {
         try {
             connection = connectionFactory.newConnection();
             Channel channel = connection.createChannel();
-            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
             channel.queueDeclare(QUEUE_NAME, true, false, false, null);
             channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
             //channel.basicQos(1);//消费者每次只接收一条消息

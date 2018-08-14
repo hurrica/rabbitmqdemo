@@ -17,9 +17,8 @@ import java.util.concurrent.TimeoutException;
  */
 @Component
 public class DirectorTest {
-    private static final String QUEUE_NAME = Constant.DIRECT_QUEUE1;
     private static final String EXCHANGE_NAME = Constant.DIRECT_EXCHANGE;
-    private static final String ROUTING_KEY = Constant.DIRECT_ROUTING_KEY1;
+    private static final String ROUTING_KEY = Constant.DIRECT_ROUTING_KEY;
 
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 
@@ -33,13 +32,9 @@ public class DirectorTest {
             connection = connectionFactory.newConnection();
             Channel channel = connection.createChannel();
             //声明交换机
-            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
-            //声明队列
-            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
-            //交换机绑定队列、路由key
-            channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
-            for (int i = 0; i < 10000; i++) {
-                channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME,null, (message+i).getBytes("utf-8"));
+            channel.exchangeDeclare(EXCHANGE_NAME, "direct", true);
+            for (int i = 0; i < 10; i++) {
+                channel.basicPublish(EXCHANGE_NAME, ROUTING_KEY,null, (message+i).getBytes("utf-8"));
             }
             System.out.println("send message:" + message);
             channel.close();

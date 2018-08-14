@@ -17,6 +17,8 @@ public class FanoutReceiver1 {
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 
     private final static String QUEUE_NAME = Constant.FANOUT_QUEUE1;
+    private static final String EXCHANGE_NAME = Constant.FANOUT_EXCHANGE;
+    private static final String ROUTING_KEY = Constant.FANOUT_ROUTING_KEY;
 
     public static void main(String[] args) {
         receive();
@@ -26,6 +28,8 @@ public class FanoutReceiver1 {
         try {
             connection = connectionFactory.newConnection();
             Channel channel = connection.createChannel();
+            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
+            channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
             //channel.basicQos(1);//消费者每次只接收一条消息
             Consumer consumer = new DefaultConsumer(channel){
                 @Override

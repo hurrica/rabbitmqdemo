@@ -10,7 +10,8 @@ public class Constant {
 
     public static final String DIRECT_EXCHANGE = "directExchange";
     public static final String DIRECT_QUEUE1="directQueue1";
-    public static final String DIRECT_ROUTING_KEY1="directRoutingKey1";
+    public static final String DIRECT_ROUTING_KEY="directRoutingKey";
     public static final String DIRECT_QUEUE2="directQueue2";
     public static final String DIRECT_ROUTING_KEY2="directRoutingKey2";
+    public static final String DIRECT_QUEUE3="directQueue3";
 }

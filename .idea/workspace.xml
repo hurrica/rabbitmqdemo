@@ -2,28 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="380380f4-9ab9-430f-aa61-5035b367ea91" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/Receiver2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/MessageSender2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/listener/FanoutMessageListener1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/listener/FanoutMessageListener2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/listener/SystemMessageListener1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/publish/FanoutExchangeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/config/RabbitmqConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/config/RabbitmqConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/Receiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/MessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/listener/SystemMessageListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/listener/SystemMessageListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/rabbitmq.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/rabbitmq.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ping/chen/rabbitmq/springamqpdemo/publish/SystemMqMessageSenderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ping/chen/rabbitmq/springamqpdemo/publish/SystemMqMessageSenderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -36,29 +22,50 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DirectReceiver1.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="33" column="30" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DirectorTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+            <state relative-caret-position="322">
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DirectReceiver2.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DirectReceiver3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Constant.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DirectReceiver2.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DirectReceiver1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="324">
+              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -90,8 +97,8 @@
       <replace>public</replace>
       <replace>private</replace>
       <replace>@Getter</replace>
-      <replace />
-      <replace />
+      <replace>@Getter /n @Value</replace>
+      <replace>public static</replace>
       <replace>publish</replace>
       <replace>system</replace>
     </replaceStrings>
@@ -129,14 +136,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/MessageSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/MessageSender2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/publish/FanoutExchangeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver3.java" />
       </list>
     </option>
   </component>
@@ -265,19 +273,6 @@
               <item name="chen" type="462c0819:PsiDirectoryNode" />
               <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-              <item name="chen" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="receive" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -299,82 +294,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-              <item name="chen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-              <item name="chen" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-              <item name="chen" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="springamqpdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rabbitmqdemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rabbitmqdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="ping" type="462c0819:PsiDirectoryNode" />
-              <item name="chen" type="462c0819:PsiDirectoryNode" />
-              <item name="rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="springamqpdemo" type="462c0819:PsiDirectoryNode" />
-              <item name="publish" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -449,6 +368,17 @@
         </pattern>
       </extension>
     </configuration>
+    <configuration name="DirectReceiver3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ping.chen.rabbitmq.demo.receive.DirectReceiver3" />
+      <module name="rabbitmqdemo" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ping.chen.rabbitmq.demo.receive.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration name="DirectorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ping.chen.rabbitmq.demo.sender.DirectorTest" />
       <module name="rabbitmqdemo" />
@@ -456,17 +386,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.ping.chen.rabbitmq.demo.sender.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="FanoutReceiver3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ping.chen.rabbitmq.demo.receive.FanoutReceiver3" />
-      <module name="rabbitmqdemo" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ping.chen.rabbitmq.demo.receive.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -837,17 +756,17 @@
     <list>
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Application.FanoutTest1" />
-      <item itemvalue="Application.FanoutReceiver3" />
-      <item itemvalue="Application.DirectorTest" />
       <item itemvalue="Application.DirectReceiver1" />
       <item itemvalue="Application.DirectReceiver2" />
+      <item itemvalue="Application.DirectorTest" />
+      <item itemvalue="Application.DirectReceiver3" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DirectorTest" />
-        <item itemvalue="Application.DirectReceiver2" />
         <item itemvalue="Application.DirectReceiver1" />
-        <item itemvalue="Application.FanoutReceiver3" />
+        <item itemvalue="Application.DirectReceiver2" />
+        <item itemvalue="Application.DirectReceiver3" />
         <item itemvalue="Application.FanoutTest1" />
       </list>
     </recent_temporary>
@@ -865,7 +784,7 @@
       <workItem from="1525572469366" duration="8608000" />
       <workItem from="1528083398397" duration="317000" />
       <workItem from="1528084963775" duration="2425000" />
-      <workItem from="1534216501797" duration="12849000" />
+      <workItem from="1534216501797" duration="16349000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1525573750113</created>
@@ -881,7 +800,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525573894889</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test">
+      <created>1534232439135</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534232439136</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -917,7 +843,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24199000" />
+    <option name="totallyTimeSpent" value="27699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
@@ -940,11 +866,11 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2264914" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32195678" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2618807" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.31547016" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32992035" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25898203" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25898203" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -967,7 +893,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -986,7 +913,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/listener/SystemMessageListener.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/rabbitmq.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -1133,13 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/repository/maven/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="357" column="57" selection-start-line="357" selection-start-column="47" selection-end-line="357" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/publish/FanoutExchangeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -1175,45 +1094,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ping/chen/rabbitmq/springamqpdemo/publish/SystemMqMessageSenderTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="27" column="42" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="32" column="48" lean-forward="true" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="31" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="64" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="64" />
         </state>
       </provider>
     </entry>
@@ -1224,24 +1108,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java">
+    <entry file="jar://D:/Java/repository/maven/com/rabbitmq/amqp-client/5.1.2/amqp-client-5.1.2.jar!/com/rabbitmq/client/impl/recovery/AutorecoveringChannel.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="29" />
+        <state relative-caret-position="213">
+          <caret line="205" column="55" selection-start-line="205" selection-start-column="45" selection-end-line="205" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="31" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/FanoutReceiver3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/FanoutTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="35" column="42" lean-forward="true" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/springamqpdemo/constant/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="31" column="61" selection-start-line="31" selection-start-column="61" selection-end-line="31" selection-end-column="61" />
+        <state relative-caret-position="324">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/sender/DirectorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ping/chen/rabbitmq/demo/receive/DirectReceiver1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="30" />
         </state>
       </provider>
     </entry>

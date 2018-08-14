@@ -6,18 +6,17 @@ import com.rabbitmq.client.*;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
-import java.util.Objects;
 import java.util.concurrent.TimeoutException;
 
 /**
  * Created by ping.chen on 2018/6/16.
  */
 @Component
-public class DirectReceiver1 {
+public class DirectReceiver3 {
 
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 
-    private final static String QUEUE_NAME = Constant.DIRECT_QUEUE1;
+    private final static String QUEUE_NAME = Constant.DIRECT_QUEUE3;
     private static final String EXCHANGE_NAME = Constant.DIRECT_EXCHANGE;
     private static final String ROUTING_KEY = Constant.DIRECT_ROUTING_KEY;
 
@@ -37,7 +36,7 @@ public class DirectReceiver1 {
                 public void handleDelivery(String consumerTag, Envelope envelope, AMQP.BasicProperties properties, byte[] body)
                         throws IOException {
                     String message = new String(body, "UTF-8");
-                    System.out.println(DirectReceiver1.class + " [x] Received '" + message + "'");
+                    System.out.println(DirectReceiver3.class + " [x] Received '" + message + "'");
                     Long deliveryTag = envelope.getDeliveryTag();
                     channel.basicAck(deliveryTag, true);
                 }

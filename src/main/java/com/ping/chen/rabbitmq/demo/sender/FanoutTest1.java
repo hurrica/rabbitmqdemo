@@ -17,7 +17,6 @@ import java.util.concurrent.TimeoutException;
  */
 @Component
 public class FanoutTest1 {
-    private static final String QUEUE_NAME = Constant.FANOUT_QUEUE1;
     private static final String EXCHANGE_NAME = Constant.FANOUT_EXCHANGE;
     private static final String ROUTING_KEY = Constant.FANOUT_ROUTING_KEY;
 
@@ -33,12 +32,9 @@ public class FanoutTest1 {
             connection = connectionFactory.newConnection();
             channel = connection.createChannel();
             //声明交换机
-            channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
-            //声明队列
-            channel.queueDeclare(QUEUE_NAME, true, false, false, null);
-            channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
+            channel.exchangeDeclare(EXCHANGE_NAME, "fanout", true);
             for (int i = 0; i < 10; i++) {
-                channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME,null, (message+i).getBytes("utf-8"));
+                channel.basicPublish(EXCHANGE_NAME, ROUTING_KEY,null, (message+i).getBytes("utf-8"));
             }
 
             System.out.println("send message:" + message);
