@@ -1,7 +1,6 @@
 package com.ping.chen.rabbitmq.demo.sender;
 
 import com.ping.chen.rabbitmq.demo.config.RabbitmqConfig;
-import com.ping.chen.rabbitmq.springamqpdemo.constant.Constant;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -16,8 +15,8 @@ import java.util.concurrent.TimeoutException;
  * Created by ping.chen on 2018/6/16.
  */
 @Component
-public class MessageSender {
-    public static final String QUEUE_NAME = "hello_world";
+public class MessageSender2 {
+    public static final String QUEUE_NAME = "hello_world2";
 
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 

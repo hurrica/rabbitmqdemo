@@ -7,15 +7,15 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Created by ping.chen on 2018/6/16.
  */
-@Configuration
 public class RabbitmqConfig {
-    @Bean
+
     public ConnectionFactory connectionFactory(){
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
+        factory.setHost("192.168.4.238");
         factory.setPort(5672);
-        factory.setUsername("chen");
-        factory.setPassword("chen");
+        factory.setUsername("admin");
+        factory.setPassword("bluepay");
+        factory.setVirtualHost("/");
         return factory;
     }
 

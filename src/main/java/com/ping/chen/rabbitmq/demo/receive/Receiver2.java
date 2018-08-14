@@ -3,7 +3,6 @@ package com.ping.chen.rabbitmq.demo.receive;
 import com.ping.chen.rabbitmq.demo.config.RabbitmqConfig;
 import com.ping.chen.rabbitmq.springamqpdemo.constant.Constant;
 import com.rabbitmq.client.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
@@ -13,7 +12,7 @@ import java.util.concurrent.TimeoutException;
  * Created by ping.chen on 2018/6/16.
  */
 @Component
-public class Receiver {
+public class Receiver2 {
 
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 

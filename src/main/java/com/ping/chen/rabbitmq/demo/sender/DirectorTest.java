@@ -16,26 +16,33 @@ import java.util.concurrent.TimeoutException;
  * Created by ping.chen on 2018/6/16.
  */
 @Component
-public class MessageSender {
-    public static final String QUEUE_NAME = "hello_world";
+public class DirectorTest {
+    private static final String QUEUE_NAME = Constant.DIRECT_QUEUE1;
+    private static final String EXCHANGE_NAME = Constant.DIRECT_EXCHANGE;
+    private static final String ROUTING_KEY = Constant.DIRECT_ROUTING_KEY1;
 
     static ConnectionFactory connectionFactory = new RabbitmqConfig().connectionFactory();
 
     public static void main(String[] args) {
-        sendMessage("hello world");
+        sendMessage("fanout exchange test ");
     }
+
     public static void sendMessage(String message) {
         Connection connection = null;
-        Channel channel = null;
         try {
             connection = connectionFactory.newConnection();
-            channel = connection.createChannel();
+            Channel channel = connection.createChannel();
+            //声明交换机
+            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
+            //声明队列
             channel.queueDeclare(QUEUE_NAME, true, false, false, null);
-            for (int i = 0; i < 10; i++) {
-                channel.basicPublish("", QUEUE_NAME,null, (message+i).getBytes("utf-8"));
+            //交换机绑定队列、路由key
+            channel.queueBind(QUEUE_NAME, EXCHANGE_NAME, ROUTING_KEY);
+            for (int i = 0; i < 10000; i++) {
+                channel.basicPublish(EXCHANGE_NAME, QUEUE_NAME,null, (message+i).getBytes("utf-8"));
             }
-
             System.out.println("send message:" + message);
+            channel.close();
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -43,15 +50,6 @@ public class MessageSender {
         } catch (TimeoutException e) {
             e.printStackTrace();
         } finally {
-            if (Objects.nonNull(channel)){
-                try {
-                    channel.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (TimeoutException e) {
-                    e.printStackTrace();
-                }
-            }
             if (Objects.nonNull(connection)){
                 try {
                     connection.close();

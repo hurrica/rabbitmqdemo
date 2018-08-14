@@ -12,16 +12,16 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @RabbitListener(queues = "${listen.queue.name.system}")
-public class SystemMessageListener {
+public class SystemMessageListener1 {
 
-    private static final Logger logger = LoggerFactory.getLogger(SystemMessageListener.class);
+    private static final Logger logger = LoggerFactory.getLogger(SystemMessageListener1.class);
 
     @Value("${listen.queue.name.system}}")
     private String queueName;
 
     @RabbitHandler
     public void process(String message) {//监听消息
-        logger.info("接收到消息：{}", message);
+        logger.info("SystemMessageListener1接收到消息：{}", message);
         processMessage(message, queueName);
     }
 
