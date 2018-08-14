@@ -52,11 +52,11 @@ publisher->exchange->queue->consumer
 
 四种交换机类型：
 
-topic
+topic：使用通配符#*，#匹配0个或多个单词，*匹配一个单词
 
 header
 
-fanout：将消息发送到所有绑定到当前交换机的队列，如pub/sub模式的实现，可用来实现日志收集系统
+fanout：将当前交换机上的消息路由到所有绑定到当前交换机的队列，忽略routing key,如pub/sub模式的实现，可用来实现日志收集系统
 
 direct：比fanout更加严格的绑定模式，消息通过队列（Queue）和路由键（routingKey）绑定到交换机（exchange），所有符合路由键routingKey的消息都会被分发到对应的Queue上面去，使用场景：日志系统中，用该模式来实现对不同级别日志的分类处理
 
