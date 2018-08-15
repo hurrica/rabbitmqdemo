@@ -17,13 +17,15 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class SystemMqMessageSenderTest {
     @Autowired
     SystemMqMessageSender systemMqMessageSender;
+    @Autowired
+    FanoutExchangeTest fanoutExchangeTest;
 
     @Test
     public void sendMessage() throws Exception {
         int i=0;
         while (i < 5){
             i++;
-            systemMqMessageSender.sendMessage("hello world");
+            fanoutExchangeTest.sendMessage("hello world " + i);
         }
     }
 
