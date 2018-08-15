@@ -1,5 +1,6 @@
 package com.ping.chen.rabbitmq.demo.receive;
 
+import com.ping.chen.rabbitmq.demo.config.RabbitmqConfig;
 import com.rabbitmq.client.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -10,8 +11,8 @@ import java.util.concurrent.TimeoutException;
  * Created by ping.chen on 2018/6/16.
  */
 public class Receiver {
-    @Autowired
-    ConnectionFactory connectionFactory;
+
+    ConnectionFactory connectionFactory = RabbitmqConfig.getConnection();
 
     private final static String QUEUE_NAME = "hello_world";
 

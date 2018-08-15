@@ -41,7 +41,7 @@ public class SystemMqMessageSender {
         Queue queue = QueueBuilder.durable(queueSystem).build();//队列持久化
         rabbitAdmin.declareQueue(queue);//声明队列
         DirectExchange exchange = (DirectExchange) ExchangeBuilder.directExchange(exchangeSystem).build();
-        rabbitAdmin.declareExchange(exchange);//创建路由
+        rabbitAdmin.declareExchange(exchange);//交换机
         Binding binding = BindingBuilder.bind(queue).to(exchange).withQueueName();//绑定路由
         rabbitAdmin.declareBinding(binding);
         return binding;

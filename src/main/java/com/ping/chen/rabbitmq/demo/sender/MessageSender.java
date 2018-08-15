@@ -1,5 +1,6 @@
 package com.ping.chen.rabbitmq.demo.sender;
 
+import com.ping.chen.rabbitmq.demo.config.RabbitmqConfig;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.Objects;
 import java.util.concurrent.TimeoutException;
 
@@ -15,19 +17,23 @@ import java.util.concurrent.TimeoutException;
  */
 @Component
 public class MessageSender {
-    public static final String QUEUE_NAME = "hello_world";
+    public static final String ROUTING_KEY = "test_queue";
+    private static final String EXCHANGE_NAME = "test_exchange_direct";
 
-    @Autowired
-    ConnectionFactory connectionFactory;
+    static ConnectionFactory connectionFactory = RabbitmqConfig.getConnection();
 
-    public void sendMessage(String message) throws IOException, TimeoutException {
+    public static void main(String[] args) throws IOException, TimeoutException {
         Connection connection = null;
         Channel channel = null;
+        String message;
         try {
             connection = connectionFactory.newConnection();
             channel = connection.createChannel();
-            channel.queueDeclare(QUEUE_NAME, false, false, false, null);
-            channel.basicPublish(" ", QUEUE_NAME,null, message.getBytes("utf-8"));
+            channel.exchangeDeclare(EXCHANGE_NAME, "direct");
+
+            String routingKey = "error";
+            message = routingKey + " level message";
+            channel.basicPublish(EXCHANGE_NAME, routingKey,null, message.getBytes("utf-8"));
 
             System.out.println("send message:" + message);
         } finally {
@@ -38,6 +44,5 @@ public class MessageSender {
                 connection.close();
             }
         }
-
     }
 }

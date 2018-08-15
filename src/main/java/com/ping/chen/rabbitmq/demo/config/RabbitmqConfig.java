@@ -7,16 +7,18 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Created by ping.chen on 2018/6/16.
  */
-@Configuration
+
 public class RabbitmqConfig {
-    @Bean
-    public ConnectionFactory connectionFactory(){
-        ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("localhost");
-        factory.setPort(5672);
-        factory.setUsername("chen");
-        factory.setPassword("chen");
-        return factory;
+    private static final ConnectionFactory connection;
+    static {
+        connection = new ConnectionFactory();
+        connection.setHost("localhost");
+        connection.setPort(5672);
+        connection.setUsername("chen");
+        connection.setPassword("chen");
+    }
+    public static ConnectionFactory getConnection(){
+        return connection;
     }
 
 }
